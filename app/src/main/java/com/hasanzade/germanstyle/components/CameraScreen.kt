@@ -50,7 +50,6 @@ fun CameraScreen(
             modifier = Modifier.fillMaxSize()
         )
 
-        // Top Controls
         Row(
             modifier = Modifier
                 .fillMaxWidth()
@@ -93,7 +92,6 @@ fun CameraScreen(
             }
         }
 
-        // Instructions Card
         Card(
             modifier = Modifier
                 .align(Alignment.TopCenter)
@@ -120,7 +118,6 @@ fun CameraScreen(
             }
         }
 
-        // Error Message
         errorMessage?.let { error ->
             Card(
                 modifier = Modifier
@@ -139,7 +136,6 @@ fun CameraScreen(
             }
         }
 
-        // Camera Ready Status
         if (!isCameraReady && !isProcessing) {
             Card(
                 modifier = Modifier.align(Alignment.Center),
@@ -161,7 +157,6 @@ fun CameraScreen(
             }
         }
 
-        // Enhanced Capture Button
         FloatingActionButton(
             onClick = {
                 if (isCameraReady && !isProcessing) {

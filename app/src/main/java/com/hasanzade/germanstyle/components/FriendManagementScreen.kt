@@ -32,7 +32,6 @@ fun FriendManagementScreen(
             .fillMaxSize()
             .padding(16.dp)
     ) {
-        // Header
         Text(
             text = "AI Receipt Splitter",
             style = MaterialTheme.typography.headlineLarge,
